@@ -10,6 +10,8 @@
 
 <img width="1893" height="975" alt="Screenshot 2025-09-24 192156" src="https://github.com/user-attachments/assets/4bd6823b-9e8a-492a-b00a-9af96772567d" />
 
+<img width="1873" height="924" alt="Screenshot 2025-09-24 192027" src="https://github.com/user-attachments/assets/f2c0130c-5b5a-47b9-81c9-e0e96bab78b4" />
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
