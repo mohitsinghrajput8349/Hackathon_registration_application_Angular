@@ -1,0 +1,57 @@
+  <div class="card p-4">
+    <div class="text-center mb-3">
+      <i class="fa fa-code fa-3x text-primary mb-2"></i>
+      <h4 id="formTitle">Register</h4>
+    </div>
+
+    <!-- Register Form -->
+    <form (ngSubmit)="onRequest()" id="registerForm" [class.d-none]="isLoginFormVisible()" class="form">
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" [(ngModel)]="registerObj.fullName"  name="fullName" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="registerObj.email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="registerObj.password" name="password" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">College Name</label>
+        <input type="text" class="form-control"  [(ngModel)]="registerObj.collegeName" name="collegeName" required>
+      </div>
+      <div class="mb-3">
+        <select class="form-control" [(ngModel)]="registerObj.role" name="role" required>
+    <option value="">-- Select Role --</option>
+    <option value="student">Student</option>
+    <option value="organizer">Organizer</option>
+  </select>
+      </div>
+      <button  type="submit" class="btn btn-custom w-100">Register</button>
+    </form>
+
+    <!-- Login Form -->
+  <form (ngSubmit)="onLoging()" id="loginForm" [class.d-none]="!isLoginFormVisible()" class="form">
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" required>
+      </div>
+      <button  type="submit" class="btn btn-custom w-100">Login</button>
+    </form>
+
+    <!-- Toggle Button -->
+   <div class="text-center mt-3">
+  <span *ngIf="!isLoginFormVisible()">Already have an account?</span>
+
+  <span *ngIf="isLoginFormVisible()">Don't have an account?</span>
+  
+  <span class="toggle-btn text-primary" (click)="toggleForms()" style="cursor:pointer">
+    {{ isLoginFormVisible() ? ' Register' : ' Login' }}
+  </span>
+</div>

@@ -28,7 +28,7 @@ body {
 
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  background: linear-gradient(rgba(156, 10, 10, 0.6), rgba(0, 0, 0, 0.6)), 
               url("https://images.unsplash.com/photo-1535378917041-10a22c95931a") no-repeat center center/cover;
   color: #37a5e1;
   padding: 150px 20px;
@@ -48,7 +48,7 @@ body {
 .btn-custom {
   background: linear-gradient(45deg, #ff6b6b, #e63946);
   border: none;
-  color: rgb(0, 0, 0);
+  color: rgb(71, 227, 23);
   font-weight: 600;
   padding: 12px 30px;
   border-radius: 50px;
