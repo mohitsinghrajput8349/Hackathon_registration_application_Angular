@@ -1,5 +1,10 @@
 # HackathonRegistrationApp
 
+<img width="1893" height="975" alt="Screenshot 2025-09-24 192156" src="https://github.com/user-attachments/assets/d14b5cbe-0897-43a7-aa58-18ff628cea6a" />
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
 ## Development server
